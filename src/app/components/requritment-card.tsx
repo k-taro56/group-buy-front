@@ -30,20 +30,20 @@ const RecruitmentCard: React.FC<RecruitmentCardProps> = ({ recruitment }) => {
   }, [recruitment.deadline]);
 
   return (
-    <div className="border p-4 m-4 max-w-sm rounded-md">
-      <img className="w-full h-64 object-cover mb-4" src={recruitment.imageUrl} alt={recruitment.name} />
+    <div className="border p-4 m-4 max-w-sm rounded-md dark:bg-gray-800 dark:text-white">
+      <img className="rounded-md w-full h-64 object-cover mb-4" src={recruitment.imageUrl} alt={recruitment.name} />
       <h2 className="text-lg font-bold mb-2">{recruitment.name}</h2>
       <p className="mb-4">{recruitment.description}</p>
       {countdown && (
-        <div className="text-red-500 mb-4 font-bold">
+        <div className="text-red-500 mb-4 font-bold dark:text-red-400">
           募集終了まで: {countdown}
         </div>
       )}
-     <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <span className="font-bold text-xl">￥{recruitment.price.toLocaleString()}</span>
         <button
           className={`${
-            isExpired ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-700'
+            isExpired ? 'bg-gray-400 cursor-not-allowed dark:bg-gray-600' : 'bg-blue-500 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-800'
           } text-white font-bold py-2 px-4 rounded`}
           disabled={isExpired}
         >

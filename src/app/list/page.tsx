@@ -55,15 +55,15 @@ const ListPage: React.FC = () => {
     <div>
       <Header />
       <main className="container mx-auto p-4">
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto py-8">
-          <h1 className="text-3xl font-bold mb-8">募集一覧</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {recruitments.map((recruitment) => (
-              <RecruitmentCard key={recruitment.id} recruitment={recruitment} />
-            ))}
+        <div className="rounded-md dark:bg-gray-900 min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto py-8">
+            <h1 className="text-2xl font-bold mb-4 dark:text-white">募集一覧</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {recruitments.map(recruitment => (
+                <RecruitmentCard key={recruitment.id} recruitment={recruitment} />
+              ))}
+            </div>
           </div>
-        </div>
         </div>
       </main>
     </div>

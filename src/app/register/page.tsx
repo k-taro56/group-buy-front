@@ -8,13 +8,13 @@ const Register: React.FC = () => {
 
   return (
     <div>
-      <header className="bg-blue-500 p-4 text-white shadow-md">
+    <header className="bg-blue-500 dark:bg-blue-700 p-4 text-white shadow-md">        
         <div className="container mx-auto">
           <h1 className="text-2xl font-semibold">グルバイ</h1>
         </div>
       </header>
       <main className="container mx-auto p-4">
-        <div className="flex items-center justify-center h-screen bg-gray-200">
+        <div className="rounded-md flex items-center justify-center h-screen bg-gray-200">
           <div className="p-8 bg-white shadow-md rounded-md">
             <h2 className="text-2xl mb-4">登録</h2>
             <form>
