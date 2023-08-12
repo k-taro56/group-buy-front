@@ -40,7 +40,7 @@ const AddRecruitmentForm: React.FC<AddRecruitmentFormProps> = ({ onAdd }) => {
         <form onSubmit={handleSubmit} className="border p-4 rounded-md max-w-lg mx-auto">
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                    商品名
+                    募集名
                 </label>
                 <input
                     type="text"
